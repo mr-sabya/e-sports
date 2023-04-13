@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --gradiant: linear-gradient(180deg, rgba(255, 168, 0, 1) 0%, rgba(255, 229, 0, 1) 100%);
+    --yellow: #ffdf2d;
+    --black: #151821;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--black);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+img{
+    width: 100%;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--yellow);
+
+}
+
+.title span {
+    position: relative;
+}
+
+.title span::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* menu section start */
+
+.menu {
+    position: absolute;
+    width: 100%;
+}
+
+.other-menu{
+    position: relative;
+    background: #08090F;
+}
+
+.menu .main-nav a {
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    transition: all .3s linear;
+}
+
+.menu .main-nav a:hover {
+    color: var(--yellow);
+}
+
+.menu .main-nav a:hover::after {
+    content: '';
+    width: 21px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu .main-nav .active{
+    color: var(--yellow);
+}
+.menu .main-nav .active::after {
+    content: '';
+    width: 21px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu .buttons .menu-btn {
+    background: var(--gradiant);
+    color: var(--black);
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+/* menu section end */
+
+
+/* banner section start */
+.banner {
+    background: url(../images/background-pic.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.banner .banner-area {
+    padding: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.banner h1 {
+    font-weight: 700;
+    font-size: 47px;
+}
+
+.banner h1 span {
+    background: var(--gradiant);
+    color: var(--black);
+}
+
+.banner .banner-area .banner-bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.banner .banner-area .banner-bottom span {
+    position: relative;
+}
+
+.banner .banner-area .banner-bottom span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--gradiant);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* banner section end */
+
+/* about section start */
+.about h2 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+}
+
+.about h2 span {
+    background: var(--gradiant);
+    color: var(--black);
+    padding: 0 5px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+.about p {
+    line-height: 1.5;
+}
+
+/* about section end */
+
+
+/* team section start */
+.team {
+    background: url(../images/team-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team a {
+    font-weight: 500;
+    font-size: 26px;
+    color: var(--yellow);
+}
+
+/* team section end */
+
+
+/* match section start */
+.single-match {
+    background: #08090F;
+    border-radius: 60px;
+    margin-bottom: 20px;
+}
+
+.single-match h2 {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.single-match h2 span {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--yellow);
+}
+
+.single-match p {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--yellow);
+}
+
+.single-match p span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+
+.single-match a {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
+/* match section end */
+
+
+/* platforms section start */
+.platforms .card {
+    background: #08090F;
+    border-radius: 34px;
+}
+
+.platforms .card h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--yellow);
+}
+
+.platforms .card a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.platforms .card a span {
+    position: relative;
+}
+
+.platforms .card a span::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: var(--gradiant);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* platforms section end */
+
+/* acivement section start */
+.acivement {
+    background: url(../images/achivment-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.acivement p {
+    margin: 0;
+}
+
+.acivement .single-achivment h2 {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--yellow);
+}
+
+.acivement .single-achivment p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* acivement section end */
+
+
+/* stream section start */
+.stream .image {
+    position: relative;
+}
+
+.stream .image img {
+    width: 100%;
+}
+
+.stream .image a {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background: var(--gradiant);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stream .image a i {
+    color: var(--black);
+}
+
+.stream .image span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-weight: 400;
+    font-size: 11px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 5px 7px;
+}
+
+.stream p {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--yellow);
+}
+
+/* stream section end */
+
+
+/* footer section start */
+.footer .subscribe {
+    background: #08090F;
+    border-radius: 30px;
+}
+
+.footer .subscribe .subscribe-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+}
+
+.footer .subscribe .subscribe-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.footer .subscribe .subscribe-btn {
+    padding: 15px 25px;
+    background: var(--gradiant);
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+
+.footer .socials a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: var(--yellow);
+}
+
+.footer .socials a:hover{
+    background: transparent;
+}
+
+/* footer section end */
